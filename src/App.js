@@ -1,16 +1,17 @@
 import React from 'react'
-import './App.css';
+import './styling/App.css';
 import Navbar from './components/navbar.jsx'
+import Intro from './components/intro.jsx'
 import Content from './components/content.jsx'
+import BottomNav from './components/bottomNav.jsx'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Intro />
       <Content />
-      <div>
-        world
-      </div>
+      <BottomNav />
     </div>
   );
 }

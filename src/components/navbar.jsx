@@ -1,12 +1,12 @@
-import './navbar.css'
 import React from 'react'
-import logo from '../assets/beeLogo.png'
+import '../styling/navbar.css'
+import Logo from './logo.jsx'
 
 export default function Navbar() {
     return(
         <div className='nav'>
             <div className='logo side-padding'>
-                <img className='logo-image' src={logo} alt='logo' />
+                <Logo size='extra-small' />
             </div>
             <div>
                 <a href='links'>ABOUT US</a>

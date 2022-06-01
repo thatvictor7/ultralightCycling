@@ -1,0 +1,138 @@
+.hex-container {
+    /* background-color: rgba(255, 228, 196, 0.404); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+
+    /* background-image: linear-gradient(to bottom, rgba(255,228,196,0), rgb(49, 49, 49)); */
+    background-color:rgba(159,172,137,1) !important;
+}
+.main {
+    width: 650px;
+    display:flex;
+    --s: 200px;  /* size  */
+    --m: 6px;    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+  }
+  
+  .container {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  /* .container div { */
+    .container a {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547); 
+    display: inline-block;
+
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background: rgba(37, 37, 37, 0.467);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+  }
+  /* .container div:nth-child(odd) { */
+    .container a:nth-child(odd) {
+    background: rgba(37, 37, 37, 0.478);
+  }
+  .container::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--f) - 3px),      
+                     #000  0 var(--f));
+  }
+
+  .single-hex {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .clip-each {
+    /* display: block; */
+    position: relative;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    /* -webkit-clip-path: url("#hexagon-clip");
+    clip-path: url("#hexagon-clip"); */
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  a.clip-each:hover {
+    /* background: #9E566E; */
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+  }
+
+  .clip-gradient {
+    background: #222;
+    width: 160px;
+    height: 160px;
+    filter: grayscale(65%) contrast(90%) !important;
+  }
+
+  .clip-caption {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .clip-gradient .clip-caption {
+    color: #fff;
+  }
+
+  .button-container {
+      /* outline: solid rgb(255, 255, 255) 1px; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .button {
+      width: fit-content;
+      outline: solid 1px rgb(255, 255, 255);
+      padding: 0 3px;
+      margin-top: 8px;
+  }
+
+  .biker {
+      background-image: url('../assets/bikers.jpeg') !important;
+  }
+
+  .shop {
+      background-image: url('../assets/bikeStore.jpeg') !important;
+  }
+
+  .landscape {
+      background-image: url('../assets/landscape.jpeg') !important;
+  }
+
+  .closeup {
+      background-image: url('../assets/bikeCloseup.jpeg') !important;
+  }
+
+  .bike-landscape {
+      background-image: url('../assets/bikeInLandscape.jpeg') !important;
+  }

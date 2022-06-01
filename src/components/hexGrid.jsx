@@ -1,5 +1,5 @@
 import React from 'react'
-import './hexGrid.css'
+import '../styling/hexGrid.css'
 
 export default function HexGrid() {
     return (
@@ -43,17 +43,17 @@ export default function HexGrid() {
                             </span>
                         </div>
                     </a>
-                    <a href="#" class="clip-each clip-gradient landscape">
+                    <a href="#" class="clip-each clip-gradient closeup">
                         <div class="clip-caption">
-                        <span>ADVENTURES</span>
+                        <span>MATERIAL & DESIGN</span>
                             <span className='button-container'>
                                 <div className='button'>LEARN MORE</div>
                             </span>
                         </div>
                     </a>
-                    <a href="#" class="clip-each clip-gradient landscape">
+                    <a href="#" class="clip-each clip-gradient bike-landscape">
                         <div class="clip-caption">
-                        <span>ADVENTURES</span>
+                        <span>SPECIAL FEATURES</span>
                             <span className='button-container'>
                                 <div className='button'>LEARN MORE</div>
                             </span>
