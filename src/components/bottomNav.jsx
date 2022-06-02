@@ -41,9 +41,9 @@ export default function BottomNav() {
                     <a href='#'>Athlete Sponsorship</a>
                     <a href='#'>Warranty & Returns</a>
                 </div>
-                <div>
+                <div style={{width: "150px"}}>
                     <Logo size='small' />
-                    <SocialContact />
+                    <SocialContact padding={"7px"} iconSize={"1.5em"} />
                 </div>
             </div>
         </div>

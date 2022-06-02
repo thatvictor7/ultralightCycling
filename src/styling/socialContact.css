@@ -1,3 +1,6 @@
-.social-contact {
+.social-container {
     display: flex;
+    /* color: aqua; */
+    width: 100%;
+    justify-content: space-between;
 }
