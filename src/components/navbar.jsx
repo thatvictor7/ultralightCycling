@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className='logo side-padding'>
                 <Logo size='extra-small' />
             </div>
-            <div>
+            <div className='links-container'>
                 <a href='links'>ABOUT US</a>
                 {/* <span className='side-padding'>BIKEPACKING</span> */}
                 <a href='links' className='side-padding'>BIKEPACKING</a>

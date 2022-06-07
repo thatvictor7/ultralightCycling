@@ -19,8 +19,11 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    align-content: center;
+    align-content: space-between;
     padding-top: 5VH;
+    flex-wrap: wrap;
+    min-height: fit-content;
+    height: 35vh;
 }
 
 .section {
@@ -35,6 +38,10 @@
 
 a:link, a:visited {
     color: white;
+}
+
+.bottom-nav-logo {
+    background-color: aqua;
 }
 
 .bottom-nav-social {

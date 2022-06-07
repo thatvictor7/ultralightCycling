@@ -52,3 +52,9 @@
 .side-padding {
     padding: 0 3vw;
 }
+
+@media all and (max-width: 950px) {
+    .links-container {
+        font-size: .9em;
+    }
+}

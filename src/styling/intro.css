@@ -13,6 +13,7 @@
 .primary-title {
     font-size: 4em;
     font-weight: 100;
+    white-space: initial;
 }
 
 .primary-bold {
@@ -21,4 +22,15 @@
 
 .secondary-title {
     font-size: 1.2em;
+}
+
+@media all and (max-width: 950px) {
+    .intro-container {
+        /* background-color: aqua; */
+        /* background-image: none; */
+    }
+
+    .primary-title {
+        font-size: 2em;
+    }
 }
